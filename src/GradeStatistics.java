@@ -13,14 +13,14 @@ public class GradeStatistics {
 		System.out.println("This program will calculate the average grade, maximum grade, and minimum grade of a class of 10 students\n");
 		
 		for (int i = 1; i <= 10; ++i) {
-			System.out.print("Please enter the grade of student " + i + ": ");
+			System.out.print("Please enter the grade of student #" + i + ": ");
 			gradeInput = scnr.nextFloat();
 			
 			while ((gradeInput < 0.0f) || (gradeInput > 100.0f)) {
 				System.out.println("\nERROR: the grade " +  gradeInput +  "% is not valid. Try again.\n");
 				System.out.print("Please enter the grade of student " + i + ": ");
 				gradeInput = scnr.nextFloat();
-				}
+			}
 				
 			if ((gradeInput > gradeMax) || (i == 1)) {
 				gradeMax = gradeInput;
@@ -32,7 +32,7 @@ public class GradeStatistics {
 		}
 		
 		System.out.println("");
-		System.out.println(":RESULTS:");
+		System.out.println("-------RESULTS-------");
 		System.out.println("Grade Average: " + String.format("%.2f", (gradeSum / 10)));
 		System.out.println("Highest Grade: " + String.format("%.2f", gradeMax));
 		System.out.println("Lowest Grade: " +  String.format("%.2f", gradeMin));
