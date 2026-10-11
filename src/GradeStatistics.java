@@ -18,7 +18,7 @@ public class GradeStatistics {
 			
 			while ((gradeInput < 0.0f) || (gradeInput > 100.0f)) {
 				System.out.println("\nERROR: the grade " +  gradeInput +  "% is not valid. Try again.\n");
-				System.out.print("Please enter the grade of student " + i + ": ");
+				System.out.print("Please enter the grade of student #" + i + ": ");
 				gradeInput = scnr.nextFloat();
 			}
 				
