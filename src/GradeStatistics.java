@@ -33,9 +33,9 @@ public class GradeStatistics {
 		
 		System.out.println("");
 		System.out.println("-------RESULTS-------");
-		System.out.println("Grade Average: " + String.format("%.2f", (gradeSum / 10)));
-		System.out.println("Highest Grade: " + String.format("%.2f", gradeMax));
-		System.out.println("Lowest Grade: " +  String.format("%.2f", gradeMin));
+		System.out.println("Grade Average: " + String.format("%.2f", (gradeSum / 10)) + "%");
+		System.out.println("Highest Grade: " + String.format("%.2f", gradeMax) + "%");
+		System.out.println("Lowest Grade: " +  String.format("%.2f", gradeMin) + "%");
 	}
 }
 
