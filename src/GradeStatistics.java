@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class GradeStatistics {
-
+	//No Corrections, running as intended.
 	public static void main (String [] args) {
 		Scanner scnr = new Scanner(System.in);
 	
